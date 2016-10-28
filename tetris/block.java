@@ -64,6 +64,12 @@ public class block{
      }
      return(true);
   }
+  public static boolean gameOver(){
+     for (block b:allblocks){
+        if(b.y==29){ reset(); return(true);}
+     }
+     return (false);
+  }
   public static void reset(){
      allblocks.clear();
     
